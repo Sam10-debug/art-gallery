@@ -1,0 +1,145 @@
+@import "./home.scss";
+@import "./nav.scss";
+@import "./gallery.scss";
+html{
+	scroll-behavior: smooth;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+.lol{
+	transform: translateX(0%);
+}
+.hamburger{
+	display: none;
+	@media screen and (max-width:768px){
+		display: block;
+	}
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	// transform: translateX(100%);
+}
+li{
+	list-style: none;
+	margin-inline: 0rem;
+}
+footer{
+	margin-top: 10px;
+	background: #F2F2F2;
+	padding: 1rem;
+	section:first-child{
+		display: flex;
+		div:first-child{
+			@media screen and (max-width:768px){
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+		}}
+		@media screen and (max-width:768px){
+			flex-direction: column;
+		}
+		p{
+			width: 80%;
+			@media screen and (max-width:768px){
+				width: 100%;
+				text-align: center;
+			}
+		}
+		// align-items: center;
+		&>div{
+			flex: 1;
+			ul{
+				@media screen and (max-width:768px){
+					display: none;
+				}
+				line-height: 200%;
+				margin-block: 0;
+				li:first-child{
+					font-weight: 700;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+	section:last-child{
+		border-top: 1px solid gray;
+		margin-top: 5px;
+		font-size: 14px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		div+div{
+			ul{
+				display: flex;
+				li{
+					margin-inline: 8px;
+				}
+			}
+		}
+	}
+}
+.image-container{
+	width: 100%;
+	>div{
+		position: unset !important;
+	}
+	.image{
+		object-fit: contain;
+		width: 100% !important;
+		position: relative !important;
+		height: unset !important;
+	}
+}
+.menu-btn {
+	@media (min-width: 768px) {
+		display: none;
+	}
+	@media screen and (max-width:768px) {
+		position: sticky;
+		// display: flex;
+		z-index: 3;
+		right: 90%;
+		z-index: 9999;
+		top: 5px;
+		cursor: pointer;
+		transition: all 0.5s ease-out;
+		width: fit-content;
+		
+	}
+}
+
+/* Styling the hamburger lines */
+.menu-btn .btn-line {
+	width: 28px;
+	height: 3px;
+	margin: 0 0 5px 0;
+	background: black;
+	transition: all 0.5s ease-out;
+}
+
+/* Adding transform to the X */
+.menu-btn.close {
+	transform: rotate(180deg);
+}
+
+/* Styling the three lines
+	to make it an X */
+.menu-btn.close .btn-line:nth-child(1) {
+	transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+	opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+	transform: rotate(-45deg) translate(7px, -6px);
+}

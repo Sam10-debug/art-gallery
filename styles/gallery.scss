@@ -1,0 +1,52 @@
+.uffizzi{
+	background-image: url("/images/Rectangle\ 58.png");
+	background-size: cover;
+	height: 500px;
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
+	// background-color: red;
+	background-repeat: no-repeat;
+	.uffizzi-div{
+		display: flex;
+		color: #fff;
+		justify-content: space-between;
+		width: 100%;
+		padding-inline: 1rem;
+		align-items: center;
+	}
+}
+.discover{
+	margin-block: 1rem;
+}
+.curated-picks{
+	text-align: center;
+	line-height: 0%;
+	margin-block: 1rem;
+}
+.curated-divs{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	place-items: center;
+	grid-row-gap: 1rem;
+	margin-block: 1rem;
+	@media screen and (max-width: 768px){
+		display: flex;
+		white-space: nowrap;
+		overflow: auto;
+		div{
+			display: inline-block;
+		}
+		div:not(:first-child){
+			margin-inline: 10px;
+		}
+	}
+	// grid-template-rows: 1fr 1fr;
+	.amanda-text{
+		display: flex;
+		flex-direction: column;
+		@media screen and (max-width: 768px) {
+			align-items: center;
+		}
+	}
+}
