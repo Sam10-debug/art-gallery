@@ -18,8 +18,8 @@ const Homep = () => {
 				</div>
 				<p><span>Address:</span> 2 Oba Yekini Elegushi Rd, Lekki Phase I 106104, Lekki.</p>
 				<p>Hours: <a href="#">Open </a>. Closes 6PM</p>
-				<h4>About</h4>
-				<p>Nike Art Gallery is an art gallery in Lagos and Osun state own-ed by Nike Davies-Okundaye. The gallery is one of the largest of its kind in West Africa, it boasts a collection of about 8,000 diverse artworks from various Nigerian artists like Chief Josephine Oboh Macleod. The Lagos gallery is in a five-storey tall building.</p>
+				<h4 className="about">About</h4>
+				<p className="art-text">Nike Art Gallery is an art gallery in Lagos and Osun state owned by Nike Davies-Okundaye. The gallery is one of the largest of its kind in West Africa, it boasts a collection of about 8,000 diverse artworks from various Nigerian artists like Chief Josephine Oboh Macleod. The Lagos gallery is in a five-storey tall building.</p>
 			</div>
 		</section>
 		<h3>Featured Artistes</h3>

@@ -1,10 +1,12 @@
 .uffizzi{
 	background-image: url("/images/Rectangle\ 58.png");
 	background-size: cover;
-	height: 500px;
+	height: 400px;
 	display: flex;
 	align-items: flex-end;
 	width: 100%;
+	margin: 5px;
+	padding: 5px;
 	// background-color: red;
 	background-repeat: no-repeat;
 	.uffizzi-div{
@@ -17,7 +19,7 @@
 	}
 }
 .discover{
-	margin-block: 1rem;
+	margin: 1rem 0.2rem;
 }
 .curated-picks{
 	text-align: center;
@@ -34,8 +36,9 @@
 		display: flex;
 		white-space: nowrap;
 		overflow: auto;
+		justify-content: space-between;
 		div{
-			display: inline-block;
+			// display: inline-block;
 		}
 		div:not(:first-child){
 			margin-inline: 10px;
