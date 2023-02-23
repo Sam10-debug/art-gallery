@@ -1,0 +1,28 @@
+.name-div{
+	background: linear-gradient(0deg, #E9E9E9, #E9E9E9),
+				linear-gradient(0deg, #F6F6F6, #F6F6F6);
+	margin-block: 1rem;
+
+}
+.first{
+	section{
+		display: flex;
+		width: 100%;
+		div:first-of-type{
+			// flex: 1;
+			flex-basis: 20%;
+		}
+		.artists-div{
+			flex-basis: 80%;
+			display: flex;
+			justify-content: space-evenly;
+			// margin-left: 10px;
+			// flex: 5;
+		}
+	}
+}
+.img-container{
+	height: 300px;
+	width: 300px;
+	background-color: red;
+}
