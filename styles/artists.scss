@@ -2,7 +2,7 @@
 	background: linear-gradient(0deg, #E9E9E9, #E9E9E9),
 				linear-gradient(0deg, #F6F6F6, #F6F6F6);
 	margin-block: 1rem;
-
+	padding: 6px 1rem;
 }
 .first{
 	section{
@@ -16,13 +16,43 @@
 			flex-basis: 80%;
 			display: flex;
 			justify-content: space-evenly;
-			// margin-left: 10px;
-			// flex: 5;
+			@media screen and (max-width: 768px) {
+				// justify-content: start;
+				overflow: auto;
+			}
 		}
 	}
 }
-.img-container{
-	height: 300px;
-	width: 300px;
-	background-color: red;
+
+.artists-section{
+	padding-inline: 10px;
+	.artists-text{
+		text-align: center;
+		font-size: 1.3rem;
+		margin-block: 5px;
+	}
+}
+@media screen and (max-width: 768px){
+	.anthony-div{
+		display: flex;
+		flex-direction: column;
+	}
+	.lol{
+		// width: 20vw;
+		display: flex;
+		justify-content: center;
+		padding: 10px;
+	}
+	.artists-div{
+		width: 100vw;
+		display: flex;
+		justify-content: space-between;
+		.art-div{
+			
+			width: 23vw;
+			.imagee{
+				width: 100%;
+			}
+		}
+	}
 }
