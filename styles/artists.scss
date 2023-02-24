@@ -3,6 +3,10 @@
 				linear-gradient(0deg, #F6F6F6, #F6F6F6);
 	margin-block: 1rem;
 	padding: 6px 1rem;
+	@media screen and (max-width: 768px) {
+		text-align: center;
+		margin-top: 10px;
+	}
 }
 .first{
 	section{

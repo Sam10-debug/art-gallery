@@ -32,6 +32,9 @@
 	place-items: center;
 	grid-row-gap: 1rem;
 	margin-block: 1rem;
+	&>div{
+		padding-inline: 10px;
+	}
 	@media screen and (max-width: 768px){
 		display: flex;
 		white-space: nowrap;
@@ -40,9 +43,7 @@
 		div{
 			// display: inline-block;
 		}
-		div:not(:first-child){
-			margin-inline: 10px;
-		}
+		
 	}
 	// grid-template-rows: 1fr 1fr;
 	.amanda-text{

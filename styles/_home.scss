@@ -88,8 +88,11 @@ h3{
 		display: flex;
 		overflow: auto;
 		justify-content: space-between;
-		div:not(:first-child){
-			margin-inline: 10px;
+		// div:not(:first-child){
+		// 	margin-inline: 10px;
+		// }
+		&>div{
+			padding-inline: 10px;
 		}
 	}
 }
