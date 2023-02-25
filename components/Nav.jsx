@@ -38,7 +38,7 @@ const Nav = () => {
 					<Link className='nav-link' href="/">Home</Link>
 					<Link className='nav-link' href="/comps/gallery">Gallery</Link>
 					<Link className='nav-link' href="/comps/artists">Artists</Link>
-					<Link className='nav-link' href="">Help</Link>
+					<Link className='nav-link' href="/comps/help">Help</Link>
 				</ul>
 			</nav>
 			<div className="">

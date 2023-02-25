@@ -33,6 +33,7 @@ li{
 	margin-inline: 0rem;
 }
 footer{
+
 	margin-top: 1rem;
 	background: #F2F2F2;
 	padding: 1rem;
@@ -148,4 +149,13 @@ footer{
 
 .menu-btn.close .btn-line:nth-child(3) {
 	transform: rotate(-45deg) translate(7px, -6px);
+}
+.help-texts{
+	text-align: center;
+	padding: 2rem 1rem;
+	@media screen and (min-width:768px){
+		padding: 2rem 0rem;
+		height: 70vh;
+
+	}
 }
