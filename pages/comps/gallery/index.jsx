@@ -1,9 +1,11 @@
-import React from 'react'
 import Image from 'next/image'
+import { motion,AnimatePresence  } from "framer-motion"
 
 const Gallery = () => {
   return (
-	<section>
+	<motion.section layout initial={{ opacity: 0, scale: 0.5 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 1.5 }}>
 		<h3 className='discover'>Get to discover art galleries near your location 
 		and book visiting tickets.</h3>
 		<div className="uffizzi">
@@ -20,92 +22,164 @@ const Gallery = () => {
 		</div>
 		<h5 className='curated-picks'>Curated Picks</h5>
 		<section className="curated-divs">
-			<div className="">
+			<motion.div animate={{ x: 0 }}  initial={{ opacity: 0.6 }}
+  whileHover={{
+    scale: 1.2,
+    transition: { duration: 1 },
+  }}
+  whileTap={{ scale: 0.9 }}
+  whileInView={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 2 }} className="">
 				<Image src="/images/Rectangle 50.png" width={150} height={150} alt="curated picks" />
 				<div className="amanda-text">
 					<span className=''>Amanda</span>
 					<span className=''>by Adriana Geo</span>
 				</div>
-			</div>
-			<div className="">
+			</motion.div>
+			<motion.div animate={{ x: 0 }}  initial={{ opacity: 0.6 }}
+  whileHover={{
+    scale: 1.2,
+    transition: { duration: 1 },
+  }}
+  whileTap={{ scale: 0.9 }}
+  whileInView={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 2 }} className="">
 				<Image src="/images/Rectangle 58.png" width={150} height={150} alt="curated picks" />
 				<div className="amanda-text">
 					<span className=''>Amanda</span>
 					<span className=''>by Adriana Geo</span>
 				</div>
-			</div>
-			<div className="">
+			</motion.div>
+			<motion.div animate={{ x: 0 }}  initial={{ opacity: 0.6 }}
+  whileHover={{
+    scale: 1.2,
+    transition: { duration: 1 },
+  }}
+  whileTap={{ scale: 0.9 }}
+  whileInView={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 2 }} className="">
 				<Image src="/images/Rectangle 50.png" width={150} height={150} alt="curated picks" />
 				<div className="amanda-text">
 					<span className=''>Amanda</span>
 					<span className=''>by Adriana Geo</span>
 				</div>
-			</div>
-			<div className="">
+			</motion.div>
+			<motion.div animate={{ x: 0 }}  initial={{ opacity: 0.6 }}
+  whileHover={{
+    scale: 1.2,
+    transition: { duration: 1 },
+  }}
+  whileTap={{ scale: 0.9 }}
+  whileInView={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 2 }} className="">
 				<Image src="/images/Rectangle 50.png" width={150} height={150} alt="curated picks" />
 				<div className="amanda-text">
 					<span className=''>Amanda</span>
 					<span className=''>by Adriana Geo</span>
 				</div>
-			</div>
-			<div className="">
+			</motion.div>
+			<motion.div animate={{ x: 0 }}  initial={{ opacity: 0.6 }}
+  whileHover={{
+    scale: 1.2,
+    transition: { duration: 1 },
+  }}
+  whileTap={{ scale: 0.9 }}
+  whileInView={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 2 }} className="">
 				<Image src="/images/Rectangle 50.png" width={150} height={150} alt="curated picks" />
 				<div className="amanda-text">
 					<span className=''>Amanda</span>
 					<span className=''>by Adriana Geo</span>
 				</div>
-			</div>
-			<div className="">
+			</motion.div>
+			<motion.div animate={{ x: 0 }}  initial={{ opacity: 0.6 }}
+  whileHover={{
+    scale: 1.2,
+    transition: { duration: 1 },
+  }}
+  whileTap={{ scale: 0.9 }}
+  whileInView={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 2 }} className="">
 				<Image src="/images/Rectangle 50.png" width={150} height={150} alt="curated picks" />
 				<div className="amanda-text">
 					<span className=''>Amanda</span>
 					<span className=''>by Adriana Geo</span>
 				</div>
-			</div>
-			<div className="">
+			</motion.div>
+			<motion.div animate={{ x: 0 }}  initial={{ opacity: 0.6 }}
+  whileHover={{
+    scale: 1.2,
+    transition: { duration: 1 },
+  }}
+  whileTap={{ scale: 0.9 }}
+  whileInView={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 2 }} className="">
 				<Image src="/images/Rectangle 50.png" width={150} height={150} alt="curated picks" />
 				<div className="amanda-text">
 					<span className=''>Amanda</span>
 					<span className=''>by Adriana Geo</span>
 				</div>
-			</div>
-			<div className="">
+			</motion.div>
+			<motion.div animate={{ x: 0 }}  initial={{ opacity: 0.6 }}
+  whileHover={{
+    scale: 1.2,
+    transition: { duration: 1 },
+  }}
+  whileTap={{ scale: 0.9 }}
+  whileInView={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 2 }} className="">
 				<Image src="/images/Rectangle 50.png" width={150} height={150} alt="curated picks" />
 				<div className="amanda-text">
 					<span className=''>Amanda</span>
 					<span className=''>by Adriana Geo</span>
 				</div>
-			</div>
-			<div className="">
+			</motion.div>
+			<motion.div animate={{ x: 0 }}  initial={{ opacity: 0.6 }}
+  whileHover={{
+    scale: 1.2,
+    transition: { duration: 1 },
+  }}
+  whileTap={{ scale: 0.9 }}
+  whileInView={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 2 }} className="">
 				<Image src="/images/Rectangle 50.png" width={150} height={150} alt="curated picks" />
 				<div className="amanda-text">
 					<span className=''>Amanda</span>
 					<span className=''>by Adriana Geo</span>
 				</div>
-			</div>
-			<div className="">
+			</motion.div>
+			<motion.div animate={{ x: 0 }}  initial={{ opacity: 0.6 }}
+  whileHover={{
+    scale: 1.2,
+    transition: { duration: 1 },
+  }}
+  whileTap={{ scale: 0.9 }}
+  whileInView={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 2 }} className="">
 				<Image src="/images/Rectangle 50.png" width={150} height={150} alt="curated picks" />
 				<div className="amanda-text">
 					<span className=''>Amanda</span>
 					<span className=''>by Adriana Geo</span>
 				</div>
-			</div>
-			<div className="">
+			</motion.div>
+			<motion.div animate={{ x: 0 }}  initial={{ opacity: 0.6 }}
+  whileHover={{
+    scale: 1.2,
+    transition: { duration: 1 },
+  }}
+  whileTap={{ scale: 0.9 }}
+  whileInView={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 2 }} className="">
 				<Image src="/images/Rectangle 50.png" width={150} height={150} alt="curated picks" />
 				<div className="amanda-text">
 					<span className=''>Amanda</span>
 					<span className=''>by Adriana Geo</span>
 				</div>
-			</div>
-			<div className="">
+			</motion.div>
+			<motion.div  animate={{ x: 0 }}  initial={{ opacity: 0.6 }}
+  whileHover={{
+    scale: 1.2,
+    transition: { duration: 1 },
+  }}
+  whileTap={{ scale: 0.9 }}
+  whileInView={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 2 }} className="">
 				<Image src="/images/Rectangle 50.png" width={150} height={150} alt="curated picks" />
 				<div className="amanda-text">
 					<span className=''>Amanda</span>
 					<span className=''>by Adriana Geo</span>
 				</div>
-			</div>
+			</motion.div>
 		</section>
-	</section>
+	</motion.section>
   )
 }
 
